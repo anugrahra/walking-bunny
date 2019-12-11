@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -24,11 +26,40 @@
   left: 20%;
 }
 
+.pikachu_img {
+  width: 100px;
+  height: 70.5px;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+}
+
+.lumpat_txt {
+  top: 35%;
+  left: 10%;
+  font-family: 'VT323', monospace;
+  position: absolute;
+  font-size: 5em;
+  animation: blink-animation 0.5s steps(10, start) infinite;
+  -webkit-animation: blink-animation 0.5s steps(10, start) infinite;
+}
+
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
   }
   to {
     background-position: -10000px 0;
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
   }
 }
